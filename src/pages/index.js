@@ -8,8 +8,6 @@ import SiteMetadata from "../components/SiteMetadata"
 const IndexPage = ({ data }) => {
   const portfolio = data.allContentfulPortfolio;
 
-  console.log(portfolio)
-
   return (
     <Layout>
       <SiteMetadata title="Home" description="Portfolio of Bronwen Latham" />

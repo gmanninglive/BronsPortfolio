@@ -26,7 +26,7 @@ const PortfolioTemplate = ({ data: { portfolio } }) => {
       <div className="container py-12 lg:pb-16">
     <div className="container w-full lg:w-3/4 justify-center">
      <Link to="/">
-      <img alt="Bronwen Latham" className="w-full" src="header3.svg" /></Link>
+      <img alt="Bronwen Latham" className={`${__dirname}header3.svg`} /></Link>
     
     <h2>
       <span className="text-3xl font-roboto pt-6 font-bold text-gray-900 md:flex md:justify-evenly">

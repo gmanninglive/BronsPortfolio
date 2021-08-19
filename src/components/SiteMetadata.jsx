@@ -22,7 +22,7 @@ const SiteMetadata = ({ title, description, image, author}) => {
       }
     }
   `)
-console.log({SiteMetadata})
+
   return (
     <Helmet
       defer={false}
