@@ -22,7 +22,7 @@ const SiteMetadata = ({ title, description, image, author}) => {
       }
     }
   `)
-
+console.log({SiteMetadata})
   return (
     <Helmet
       defer={false}
@@ -52,7 +52,7 @@ SiteMetadata.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   image: PropTypes.string,
-  author: PropTypes.string.isRequired,
+  author: PropTypes.string
 }
 
 SiteMetadata.defaultProps = {

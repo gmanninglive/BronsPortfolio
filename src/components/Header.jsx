@@ -15,12 +15,6 @@ const Header = () => {
           }
         }
       }
-      contentfulCv {
-        cv {
-         file {
-           url
-         }
-       }}
     }`)
 
  

@@ -1,5 +1,5 @@
 import { graphql } from "gatsby"
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react"
 import Layout from "../layouts/Layout"
 import SiteMetadata from "../components/SiteMetadata"
@@ -40,7 +40,7 @@ const AboutPage = ({ data }) => (
                             </div>
                          </div>
                       <div className="container justify-center w-3/4 h-3/4 md:w-1/2 xl:w-2/5 md:pl-12 ">
-{/*Portrait/Photo*/}  <Img fluid={data.author.childImageSharp.fluid} alt="Bronwen Latham" className="rounded-full shadow-md" />
+{/*Portrait/Photo*/}  <GatsbyImage image={data.author.childImageSharp.gatsbyImageData} alt="Bronwen Latham" className="rounded-full shadow-md" />
                   </div>
               </div>
           </div>
@@ -54,9 +54,7 @@ export const query = graphql`
   query {
     author: file(relativePath: { eq: "author.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600, quality: 85) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(width: 600, quality: 85)
       }
     }
   }

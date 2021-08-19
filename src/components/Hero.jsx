@@ -9,11 +9,11 @@ const Hero = () => (
     
     <h2>
       <span className="py-2 text-3xl font-roboto font-bold text-gray-900 md:flex md:justify-evenly">
-      <tr>Journalist </tr>
+      Journalist <br />
       <img alt="point" className="hidden w-2 md:block" src="point.svg" />
-      <tr>Content Writer</tr>
+      Content Writer <br />
       <img alt="point" className="hidden w-2 md:block" src="point.svg" />
-      <tr>Radio Presenter</tr>
+      Radio Presenter
       </span>
     </h2>
     </div>
